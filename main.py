@@ -15,8 +15,20 @@ print( 6 % 4) # 2
 
 #Math functions
 print(round(3.567, 2)) # 3.57
-
 print(abs(-20))
+
+#variables, do not need to declare
+#best practices for variables
+#snake_case
+#Start with lowercase or underscore
+#Letters, numbers, underscores
+#case sensitive
+#don't overwrite keywords
+
+
+user_iq = 90
+a,b,c = 1,2,3 # assign values to multiple variables
+print(user_iq) #90
 bool
 str
 list
@@ -29,3 +41,4 @@ dict
 #Specialized Data Types
 
 None
+
