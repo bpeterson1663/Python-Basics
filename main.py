@@ -29,8 +29,33 @@ print(abs(-20))
 user_iq = 90
 a,b,c = 1,2,3 # assign values to multiple variables
 print(user_iq) #90
+
+#augmented asignment operator
+some_value = 5
+some_value -= 2
+print(some_value) #3
+
+long_string = '''
+Multiple 
+line
+String
+
+'''
+print(long_string)
+
+#string concantination only works with strings so need to convert type
+print("number is " + str(5))
+
+#Escape Sequence
+weather = "It's \"kind of\" sunny with a backslash \\"
+print(weather)
+
+#Formatting strings 
+age = 32
+name = "Brady"
+print(f'hi {name} you are {age} years old' )
 bool
-str
+
 list
 tuple
 set
