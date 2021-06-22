@@ -100,3 +100,17 @@ a,b, *other = [1,2,3,4,5,6,7,8]
 print(a) #1
 print(b) #2
 print(other) #[3,4,5,5,6,7,8]
+
+#Dictionary
+dictionary = {
+  'a': 1,
+  'b': 2
+}
+#Dictionary keys can be a number or boolean but has to be unique
+print
+
+dictionary.get('a', 'DEFAULT_VALUE')
+
+print('a' in dictionary.keys())
+
+dictionary.update({'a': 3}) #will create if a doesnt exist
