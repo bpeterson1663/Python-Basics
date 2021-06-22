@@ -74,3 +74,29 @@ password_length = len(password)
 hidden_password = '*' * password_length
 print(f'{username}, your password {hidden_password} is {password_length} letters long')
 
+#Lists
+cart = ['notebooks', 'pencils', 'pens', 'staples']
+print(cart[1]) # pencils
+
+print(cart[0:2]) #notebooks, pencils
+#lists are mutable
+cart[0] = 'laptop'
+#assigning one list to another is similar to object referencing in javascript
+#create a new copy
+cart2 = cart[:]
+
+#.append, .extend, adds new items to the list do no return anything 
+
+#pop(position) removes the item in the list, pop will return the item that was just removed
+
+#.index returns the position
+
+#cart.sort() or sorted(cart), sorted produces a new list
+#reverse or reversed, doesnt sort but reverses the order of the items 
+
+#list unpacking
+a,b, *other = [1,2,3,4,5,6,7,8]
+
+print(a) #1
+print(b) #2
+print(other) #[3,4,5,5,6,7,8]
