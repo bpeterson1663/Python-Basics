@@ -114,3 +114,28 @@ dictionary.get('a', 'DEFAULT_VALUE')
 print('a' in dictionary.keys())
 
 dictionary.update({'a': 3}) #will create if a doesnt exist
+
+#Tuples
+#similar to lists but should be used when not changing
+
+#Sets
+#a list that does not have duplicates
+my_set = { 1, 2, 3, 4, 5}
+
+second_set = {3,4,5,6,7,8,9}
+#check if 1 exists
+print(1 in my_set)
+
+print(my_set.difference(second_set))
+#update 
+
+## Conditional Logic
+is_old = False
+is_licensed = True
+
+if is_old and is_licensed:
+  print("you are old enough to drive")
+elif is_licensed:
+  print("you can drive now")
+else:
+  print("else statement")
