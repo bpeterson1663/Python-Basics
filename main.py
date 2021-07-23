@@ -139,3 +139,10 @@ elif is_licensed:
   print("you can drive now")
 else:
   print("else statement")
+
+  ## Ternary Operator/ Conditional Expressions
+
+is_friend = True
+can_message = "message allowed" if is_friend else "not allowed to message"
+
+##Short circuiting is where the second conditional will get ignored if first conditional is enough to determine the outcome
