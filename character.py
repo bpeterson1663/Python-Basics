@@ -56,3 +56,15 @@ player1.cancel_membership()
 player1.attack_move(50)
 Wizard.get_instructions()
 Wizard.get_result_of_attack(30, 20)
+
+
+class SuperList(list):
+    def __len__(self):
+        return 1000
+
+
+super_list1 = SuperList()
+print(len(super_list1))  # 1000
+super_list1.append(5)
+print(super_list1[0])  # 5
+print(issubclass(SuperList, list))
