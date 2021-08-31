@@ -5,10 +5,6 @@ class PlayerCharacter:
     # Class Object Attribute
     membership = True
 
-    def __init__(self, name):
-        if PlayerCharacter.membership:
-            self._name = name
-
     def run(self):
         print(f'{self._name} ran away')
 
@@ -39,13 +35,36 @@ class PlayerCharacter:
 
 class Wizard(PlayerCharacter):
     def __init__(self, name, attack):
-        super().__init__(name)
+        self._name = name
         self.attack = attack
 
     def wizard_attack(self):
         print(f'{self._name} attacked with {self.attack}')
 
     pass
+
+
+class Archer(PlayerCharacter):
+    def __init__(self, name, arrows):
+        self._name = name
+        self.arrows = arrows
+
+    def check_arrows(self):
+        print(f'{self.arrows} remaining')
+
+    def run(self):
+        print(f'{self._name} ran really fast')
+
+
+class Hybrid(Wizard, Archer):
+    def __init__(self, name, power, arrows):
+        Archer.__init__(self, name, arrows)
+        Wizard.__init__(self, name, power)
+
+
+hb1 = Hybrid('Brady The Great', 50, 100)
+print(hb1.check_arrows())
+hb1.run()
 
 
 player1 = Wizard('Brady', 100)
