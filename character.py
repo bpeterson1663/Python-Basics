@@ -65,7 +65,7 @@ class Hybrid(Wizard, Archer):
 hb1 = Hybrid('Brady The Great', 50, 100)
 print(hb1.check_arrows())
 hb1.run()
-
+print(Hybrid.mro())  # Prints the Method Resolution Order
 
 player1 = Wizard('Brady', 100)
 
