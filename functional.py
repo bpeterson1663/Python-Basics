@@ -19,3 +19,12 @@ def multiply_by2_modified(item):
 
 print(list(map(multiply_by2_modified, my_list)))
 print(my_list)  # my_list is unaffected
+
+
+# filter
+
+def only_odd(item):
+    return item % 2 != 0
+
+
+print(list(filter(only_odd, my_list)))
