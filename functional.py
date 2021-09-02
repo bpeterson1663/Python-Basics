@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 # Pure Function
 def multiply_by2(li):
     new_list = []
@@ -35,3 +38,12 @@ your_list = [10, 20, 30]
 
 print(list(zip(my_list, your_list)))  # [(1, 10), (2, 20), (3, 30)]
 
+# reduce
+acc_list = [3, 4, 5]
+
+
+def accumulator(acc, item):
+    return acc + item
+
+
+print(reduce(accumulator, acc_list, 4))  # 16
