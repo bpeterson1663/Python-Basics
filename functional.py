@@ -47,3 +47,7 @@ def accumulator(acc, item):
 
 
 print(reduce(accumulator, acc_list, 4))  # 16
+
+# lambda expressions
+lambda_list = [6, 7, 8]
+print(list(map(lambda item: item * 2, lambda_list)))  # [12, 14, 16]
