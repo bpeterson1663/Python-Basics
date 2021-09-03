@@ -60,3 +60,15 @@ a = [(0, 2), (4, 3), (9, 9), (10, -1)]
 a.sort(key=lambda x: x[1])
 
 print(a)
+
+# List Comprehensions
+
+my_comp_list = [char for char in 'hello']
+my_comp_list2 = [num for num in range(0, 100)]
+my_comp_list3 = [num**2 for num in range(0, 100)]
+my_comp_list4 = [num**2 for num in range(0, 100) if num % 2 == 0]
+
+print(my_comp_list)
+print(my_comp_list2)
+print(my_comp_list3)
+print(my_comp_list4)
