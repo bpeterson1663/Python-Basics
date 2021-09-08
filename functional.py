@@ -65,10 +65,18 @@ print(a)
 
 my_comp_list = [char for char in 'hello']
 my_comp_list2 = [num for num in range(0, 100)]
-my_comp_list3 = [num**2 for num in range(0, 100)]
-my_comp_list4 = [num**2 for num in range(0, 100) if num % 2 == 0]
+my_comp_list3 = [num ** 2 for num in range(0, 100)]
+my_comp_list4 = [num ** 2 for num in range(0, 100) if num % 2 == 0]
 
 print(my_comp_list)
 print(my_comp_list2)
 print(my_comp_list3)
 print(my_comp_list4)
+
+simple_dictionary = {
+    'a': 1,
+    "b": 2
+}
+my_dictionary = {key: value ** 2 for key, value in simple_dictionary.items()}
+
+print(my_dictionary)
