@@ -1,6 +1,6 @@
 import utility
-import shopping.shopping_cart
+from shopping.shopping_cart import buy
 
-print(shopping.shopping_cart.buy('item'))
+print(buy('item'))
 
 print(utility.multiply(7, 6))
