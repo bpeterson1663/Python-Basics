@@ -1,4 +1,5 @@
 import datetime
+import pdb
 from array import array
 from collections import Counter, defaultdict, OrderedDict
 
@@ -9,7 +10,7 @@ print(Counter(sentence))
 
 dictionary = defaultdict(lambda: 5, {'a': 1, 'b': 2})
 print(dictionary['c'])  # returns 5 since c doesnt exist
-
+pdb.set_trace()
 d = OrderedDict()
 d['a'] = 1
 d['b'] = 2
@@ -17,6 +18,7 @@ d['b'] = 2
 d2 = OrderedDict()
 d2['b'] = 2
 d2['a'] = 1
+
 
 print(d2 == d)  # False because the order does not match
 
