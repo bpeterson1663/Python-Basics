@@ -46,15 +46,14 @@ long_time()
 
 # Error Handling
 
-while True:
-    try:
-        age = int(input('what is your age? '))
-        print(10/age)
-        raise ValueError('throws new errors')
-    except ZeroDivisionError:
-        print('please enter a number higher than zero')
-    else:
-        print('thank you')
-        break
-    finally:
-        print('always runs')
+# while True:
+#     try:
+#         age = int(input('what is your age? '))
+#         print(10/age)
+#     except ZeroDivisionError:
+#         print('please enter a number higher than zero')
+#     else:
+#         print('thank you')
+#         break
+#     finally:
+#         print('always runs')
