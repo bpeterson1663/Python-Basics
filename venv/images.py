@@ -11,7 +11,7 @@ print(img)
 print(img.format)
 print(img.size)
 print(img.mode)
-filtered_img.show()
 
 filtered_img.thumbnail((400, 400))
 filtered_img.save('thumbnail.jpg')
+filtered_img.show()
