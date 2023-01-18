@@ -1,2 +1,2 @@
 # Python-Basics
-All leasons and challenges are from https://www.udemy.com/course/complete-python-developer-zero-to-mastery
+All leasons and challenges are from Zero To Mastery Complete Python Developer Course

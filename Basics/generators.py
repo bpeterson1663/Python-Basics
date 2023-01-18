@@ -35,13 +35,14 @@ class MyGen():
         return self
 
     def __next__(self):
-        if MyGen.Current < self.last:
+        if MyGen.current < self.last:
             num = MyGen.current
             MyGen.current += 1
             return num
         raise StopIteration
 
-
+gen = MyGen(0, 100)
+    
 def fib(number):
     a = 0
     b = 1
