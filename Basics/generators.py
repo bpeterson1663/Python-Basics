@@ -46,13 +46,11 @@ gen = MyGen(0, 100)
 def fib(number):
     a = 0
     b = 1
-    result = []
     for i in range(number):
-        result.append(a)
+        yield a
         temp = a
         a = b
         b = temp + b
-    return result
 
 
 for x in fib(20):
