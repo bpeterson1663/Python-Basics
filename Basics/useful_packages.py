@@ -17,3 +17,6 @@ od2['b'] = 2
 od2['a'] = 1
 
 print(od == od2) # returns false since order is not the same
+
+# Recently, the Python has made Dictionaries ordered by default! 
+# So unless you need to maintain older version of Python (older than 3.7), you no longer need to use ordered dict, you can just use regular dictionaries!
