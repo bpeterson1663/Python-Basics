@@ -1,4 +1,7 @@
 from collections import Counter, defaultdict, OrderedDict
+import datetime
+from array import array
+
 
 li = [1,2,3,4,5,6,7,7,7,7]
 sentence = 'blah blah blah thinking'
@@ -20,3 +23,10 @@ print(od == od2) # returns false since order is not the same
 
 # Recently, the Python has made Dictionaries ordered by default! 
 # So unless you need to maintain older version of Python (older than 3.7), you no longer need to use ordered dict, you can just use regular dictionaries!
+
+print(datetime.time(5,42,33))
+print(datetime.date.today())
+
+arr = array('i', [1,2,3])
+
+print(arr[2])
