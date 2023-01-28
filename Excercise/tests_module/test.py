@@ -9,6 +9,11 @@ class TestMain(unittest.TestCase):
     def test_do_wrong_stuff(self):
         test_param = "not a number"
         result = do_stuff.add_three(test_param)
-        self.assertTrue(isinstance(result, ValueError))
+        self.assertIsInstance(result, ValueError)
+    def test_do_stuff_type(self):
+        test_param = None
+        result = do_stuff.add_three(test_param)
+        self.assertEqual(result, "please enter a number")
         
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
